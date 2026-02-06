@@ -1,0 +1,4 @@
+# Ignore any file in the root directory starting with 'z'
+.DS_Store
+chatbot-panel-plugin/.DS_Store
+z.md

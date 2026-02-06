@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "panel",
+  "name": "chatbot-panel",
+  "id": "custom-chatbot-panel",
+  "routes": [
+    {
+      "path": "/logql-agent",
+      "url": "http://logql-agent:80",
+      "method": "POST"
+    }
+  ],
+  "info": {
+    "description": "Chatbot UI panel",
+    "author": {
+      "name": "driprado",
+      "url": "https://github.com/driprado"
+    },
+    "keywords": [],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Repository",
+        "url": "https://github.com/driprado/chatbot-panel-plugin"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/driprado/chatbot-panel-plugin/blob/main/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=7.0.0",
+    "plugins": []
+  }
+}
