@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C2038"/>
+      <stop offset="100%" stop-color="#0F1327"/>
+    </linearGradient>
+
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FFD23F"/>
+      <stop offset="100%" stop-color="#FF8A00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square -->
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg)"/>
+
+  <!-- Bot head -->
+  <rect x="146" y="96" width="220" height="160" rx="80" fill="#EAF6FF"/>
+  <rect x="176" y="126" width="160" height="100" rx="50" fill="#0B1220"/>
+
+  <!-- Eyes -->
+  <circle cx="224" cy="176" r="12" fill="#6EC8FF"/>
+  <circle cx="288" cy="176" r="12" fill="#6EC8FF"/>
+
+  <!-- Smile -->
+  <path d="M232 198 Q256 214 280 198" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Speech bubble -->
+  <path d="M96 260 h320 a32 32 0 0 1 32 32 v96 a32 32 0 0 1 -32 32 h-168 l-56 48 v-48 h-96 a32 32 0 0 1 -32 -32 v-96 a32 32 0 0 1 32 -32 z"
+        fill="#FFFFFF"/>
+
+  <!-- Bars -->
+  <g fill="url(#bar)">
+    <rect x="148" y="332" width="24" height="56" rx="6"/>
+    <rect x="188" y="316" width="24" height="72" rx="6"/>
+    <rect x="228" y="296" width="24" height="92" rx="6"/>
+    <rect x="268" y="316" width="24" height="72" rx="6"/>
+    <rect x="308" y="284" width="24" height="104" rx="6"/>
+  </g>
+
+  <!-- Trend line -->
+  <path d="M160 360 L200 336 L240 316 L280 336 L320 300"
+        stroke="#FF8A00" stroke-width="6" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

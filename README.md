@@ -16,7 +16,7 @@ Repository layout:
 │   ├── src
 │   │   ├── ChatPanel.tsx    # React component implementing the panel UI
 │   │   ├── img
-│   │   │   └── logo.svg     # Static image assets
+│   │   │   └── chatbot-grafana-plugin-icon.svg # Static image assets
 │   │   ├── module.test.ts   # Unit tests for module-related logic
 │   │   ├── module.ts        # Grafana plugin bootstrap/register
 │   │   ├── plugin.json      # Grafana plugin descriptor

@@ -1,15 +1,9 @@
 # Changelog
 
-## 1.0.1 (Unreleased)
+## Unreleased
 
-### Changed
-
-- Migrate build tooling from `@grafana/toolkit` to `@grafana/create-plugin`. Updated webpack config, TypeScript config, ESLint, Jest, and related scaffolding.
-
-### BREAKING CHANGES
-
-- Removed legacy `grafana-toolkit` CLI commands. Developers must now use the new build scripts in `chatbot-panel-plugin/package.
+- No changes yet.
 
 ## 1.0.0
 
-Initial release.
+- Initial release of the chatbot panel plugin under driprado/chatbot-panel-plugin.
