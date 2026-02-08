@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "chatbot-panel",
-  "id": "custom-chatbot-panel",
+  "id": "driprado-chatbot-panel",
   "routes": [
     {
       "path": "/logql-agent",
@@ -16,7 +16,7 @@
       "name": "driprado",
       "url": "https://github.com/driprado"
     },
-    "keywords": [],
+    "keywords": ["chatbot", "panel", "ai", "conversation"],
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
