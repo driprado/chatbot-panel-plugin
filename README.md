@@ -58,6 +58,8 @@ make install # install exact dependencies
 
 make build # build the plugin
 
+make package # build and create distribution ZIP with SHA1
+
 make test # run unit tests
 
 make clean # clean build artifacts and node_modules
