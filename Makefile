@@ -1,10 +1,10 @@
 CHATBOT_DIR := chatbot-panel-plugin
 
-.PHONY: help install build test clean fmt int-test int-test-stop
+.PHONY: help install build package test clean fmt int-test int-test-stop
 
 help:
 	@echo "Makefile for chatbot-panel plugin"
-	@echo "Targets: install build test clean fmt int-test int-test-stop"
+	@echo "Targets: install build package test clean fmt int-test int-test-stop"
 
 install:
 	@echo "Installing dependencies for $(CHATBOT_DIR)..."
@@ -21,6 +21,12 @@ install:
 build:
 	@echo "Building plugin in $(CHATBOT_DIR)..."
 	cd $(CHATBOT_DIR) && npm run build
+
+package: build
+	@echo "Packaging plugin for distribution..."
+	cd $(CHATBOT_DIR)/dist && zip -r ../../driprado-chatbot-panel-$$(grep '"version"' ../package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip .
+	@echo "Package created: driprado-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip"
+	@shasum -a 1 driprado-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip
 
 test:
 	@echo "Running tests for $(CHATBOT_DIR)..."
