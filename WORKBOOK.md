@@ -72,4 +72,18 @@
   - Plugin will be available in the Grafana plugin catalog
   - Users can install via Grafana UI or CLI
 
-**Note**: Signature level (Community/Commercial) is assigned by Grafana team after review.
+## Enhancements
+
+- ⭕ Create sponsorship link
+  - finish process at <https://github.com/sponsors/driprado/signup>
+
+- ⭕ Add Sponsorship Link to plugin
+  - Add sponsorship link to `plugin.json` (Info.Links section)
+  - Use name: `"sponsor"` or `"sponsorship"`
+  - Example: `{"name": "Sponsor", "url": "https://github.com/sponsors/driprado"}`
+  - Will be shown on plugin details page to allow users to support your work
+
+- ⭕ Build Provenance Attestation
+  - Set up GitHub Actions workflow with build attestation
+  - Verifies plugin build provenance automatically
+  - [Documentation](https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation)

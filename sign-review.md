@@ -1,5 +1,39 @@
 # Signing Review
 
+## Plugin Validation Report 4
+
+Plugin: driprado-chatbot-panel
+
+Version: 1.0.0
+
+Current State: Not Published
+
+⚠️ unsigned-plugin
+
+unsigned plugin
+
+Details: This is a new (unpublished) plugin. This is expected during the initial review process. Please allow the review to continue, and a member of our team will inform you when your plugin can be signed.
+
+💡 sponsorshiplink
+
+You can include a sponsorship link if you want users to support your work
+
+Details: Consider to add a sponsorship link in your plugin.json file (Info.Links section: with Name: 'sponsor' or Name: 'sponsorship'), which will be shown on the plugin details page to allow users to support your work if they wish.
+
+💡 invalid-provenance-attestation
+
+Cannot verify plugin build provenance attestation.
+
+Details: Please verify your workflow attestation settings. See the documentation on implementing build attestation: https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation
+
+Please fix the issues described above and update your submission.
+
+To update your submission, please visit the grafana.com website, navigate to 'My Account', select 'My Plugins' and update your submission.
+
+Reply to this ticket (#227826) via email or in the User Portal.
+
+---
+
 ## Plugin Validation Report 3
 
 Plugin: driprado-chatbot-panel
