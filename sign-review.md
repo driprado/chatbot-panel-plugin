@@ -1,4 +1,4 @@
-Plugin checks Result: Failed
+# Plugin checks Result: Failed
 
 ❌ IMPORTANT: Your plugin has errors and can't be reviewed in its current state. This submission is blocked from review until the errors below are addressed.
 
@@ -8,7 +8,8 @@ To re-submit the plugin, please visit the grafana.com website, navigate to 'My A
 
 Please be advised that the plugin will not be reviewed until the listed errors have been addressed and the plugin has been resubmitted.
 
-Plugin Validation Report
+## Plugin Validation Report
+
 Plugin: hypatiastack-chatbot-panel
 
 Version: 1.0.0
@@ -22,6 +23,7 @@ The provided javascript/typescript source code does not match your plugin archiv
 Details: Verify the provided source code is the same as the one used to generate plugin archive. If you are providing a git repository URL make sure to include the correct ref (branch or tag) in the URL.
 
 The following 2 file(s) differ when comparing source map with source code.
+
 - ./ChatPanel.tsx
 - ./module.ts
 
@@ -29,7 +31,7 @@ The following 2 file(s) differ when comparing source map with source code.
 
 non-standard frontend build tooling
 
-Details: The plugin does not appear to use Grafana's standard frontend build tooling. Please use create-plugin to scaffold your plugin: https://grafana.com/developers/plugin-tools/
+Details: The plugin does not appear to use Grafana's standard frontend build tooling. Please use create-plugin to scaffold your plugin: <https://grafana.com/developers/plugin-tools/>
 
 ❌ packagejson-not-found
 
@@ -53,7 +55,7 @@ Details: This is a new (unpublished) plugin. This is expected during the initial
 
 Cannot verify plugin build provenance attestation.
 
-Details: Please verify your workflow attestation settings. See the documentation on implementing build attestation: https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation
+Details: Please verify your workflow attestation settings. See the documentation on implementing build attestation: <https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation>
 
 💡 sponsorshiplink
 
@@ -64,5 +66,6 @@ Details: Consider to add a sponsorship link in your plugin.json file (Info.Links
 Please fix the issues described above and update your submission.
 
 To update your submission, please visit the grafana.com website, navigate to 'My Account', select 'My Plugins' and update your submission.
+
 
 Reply to this ticket (#227823) via email or in the User Portal.

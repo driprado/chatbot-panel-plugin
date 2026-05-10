@@ -2,7 +2,7 @@
 
 Purpose: Grafana panel plugin for a "chatbot" panel. The plugin follows Grafana best-practice layout for a React/TypeScript panel.
 
-Repository layout:
+## Repository layout
 
 ```sh
 .

@@ -1,6 +1,6 @@
 # Workbook
 
-## [] Plugin Signing and Publishing
+## Plugin Signing and Publishing
 
 ### Pre-submission Checklist
 
@@ -52,7 +52,7 @@
 
 ### Post-Approval Signing
 
-- [] Create Access Policy Token
+- [ ] Create Access Policy Token
 
   - Log in to Grafana Cloud account
   - Go to My Account → Security → Access Policies
@@ -61,13 +61,13 @@
     - Scope: `plugins:write`
   - Create token and save securely
 
-- [] Sign the Plugin
+- [ ] Sign the Plugin
 
   - Export token: `export GRAFANA_ACCESS_POLICY_TOKEN=<YOUR_TOKEN>`
   - Run signing: `npm run sign` (or `npx @grafana/sign-plugin@latest`)
   - Verify `MANIFEST.txt` is created in the `dist` directory
 
-- [] Distribute
+- [ ] Distribute
 
   - Plugin will be available in the Grafana plugin catalog
   - Users can install via Grafana UI or CLI

@@ -4,7 +4,7 @@ Panel options are settings the user configures to change panel behavior.
 
 Always complete **all three steps**:
 
-### **1. Extend the options type**
+## 1. Extend the options type
 
 File: `src/types.ts`
 
@@ -20,7 +20,7 @@ export interface SimpleOptions {
 
 ---
 
-### **2. Register the option in `setPanelOptions`**
+## 2. Register the option in `setPanelOptions`
 
 File: `src/module.ts` inside `setPanelOptions((builder) => { ... })`
 
@@ -61,7 +61,7 @@ Rules:
 
 ---
 
-### **3. Use the option in the panel component**
+## 3. Use the option in the panel component
 
 File: `src/Panel.tsx` (or equivalent)
 
@@ -76,15 +76,15 @@ No option may remain unused.
 
 ---
 
-# Quick Editor Recipes
+## Quick Editor Recipes
 
-### **Boolean**
+### Boolean
 
 ```ts
 .addBooleanSwitch({ path: 'flag', name: 'Flag', defaultValue: false })
 ```
 
-### **Number**
+### Number
 
 ```ts
 .addNumberInput({
@@ -95,13 +95,13 @@ No option may remain unused.
 })
 ```
 
-### **String**
+### String
 
 ```ts
 .addTextInput({ path: 'label', name: 'Label', defaultValue: '' })
 ```
 
-### **Select**
+### Select
 
 ```ts
 .addSelect({
@@ -115,7 +115,7 @@ No option may remain unused.
 })
 ```
 
-### **Radio**
+### Radio
 
 ```ts
 .addRadio({

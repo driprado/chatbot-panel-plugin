@@ -69,7 +69,7 @@ Messages are now retained across page reloads.
 **Integration tests:**
 
 - Use `make int-test` to launch a local Grafana instance with the plugin installed.
-- Access Grafana at http://localhost:3000 (default credentials: admin/admin).
+- Access Grafana at <http://localhost:3000> (default credentials: admin/admin).
 - Manually verify panel behavior in the Grafana UI.
 - Stop the environment with `make int-test-stop` when done.
 
