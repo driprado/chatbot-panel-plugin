@@ -10,7 +10,7 @@
     "lint:fix": "npm run lint -- --fix && prettier --write --list-different .",
     "server": "docker compose up --build",
     "sign": "npx --yes @grafana/sign-plugin@latest",
-    "start": "yarn watch",
+    "start": "npm run dev",
     "test": "jest --watch --onlyChanged",
     "test:ci": "jest --passWithNoTests --maxWorkers 4",
     "typecheck": "tsc --noEmit"
@@ -81,10 +81,10 @@
   },
   "packageManager": "npm@11.4.2",
   "overrides": {
-    "fast-uri": "^3.0.5",
+    "fast-uri": "^3.1.2",
     "flatted": "^3.4.2",
     "minimatch": "^10.0.0",
     "picomatch": "^4.0.3",
-    "serialize-javascript": "^6.0.2"
+    "serialize-javascript": "^7.0.5"
   }
 }

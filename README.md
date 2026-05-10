@@ -6,23 +6,24 @@ Purpose: Grafana panel plugin for a "chatbot" panel. The plugin follows Grafana 
 
 ```sh
 .
-├── chatbot-panel-plugin
-│   ├── CHANGELOG.md         # Change log for the plugin
-│   ├── jest.config.js       # Jest configuration for tests
-│   ├── LICENSE              # License file
-│   ├── package-lock.json    # Exact dependency versions (lockfile)
-│   ├── package.json         # NPM manifest and scripts
-│   ├── README.md            # Plugin-specific documentation
-│   ├── src
-│   │   ├── ChatPanel.tsx    # React component implementing the panel UI
-│   │   ├── img
-│   │   │   └── chatbot-grafana-plugin-icon.svg # Static image assets
-│   │   ├── module.test.ts   # Unit tests for module-related logic
-│   │   ├── module.ts        # Grafana plugin bootstrap/register
-│   │   ├── plugin.json      # Grafana plugin descriptor
-│   │   └── types.ts         # Shared TypeScript types/interfaces
-│   └── tsconfig.json        # TypeScript compiler options
-└── README.md                # This file (project overview)
+├── .config/                 # Grafana build configuration
+├── CHANGELOG.md             # Change log for the plugin
+├── CONTRIBUTING.md          # Contribution guidelines
+├── jest.config.js           # Jest configuration for tests
+├── LICENSE                  # Apache 2.0 license
+├── package.json             # NPM manifest and scripts
+├── package-lock.json        # Exact dependency versions (lockfile)
+├── provisioning/            # Grafana provisioning for local testing
+│   └── dashboards/          # Demo dashboard configuration
+├── src/
+│   ├── ChatPanel.tsx        # React component implementing the panel UI
+│   ├── img/                 # Static image assets
+│   │   └── chatbot-grafana-plugin-icon.svg
+│   ├── module.test.ts       # Unit tests for module-related logic
+│   ├── module.ts            # Grafana plugin bootstrap/register
+│   ├── plugin.json          # Grafana plugin descriptor
+│   └── types.ts             # Shared TypeScript types/interfaces
+└── tsconfig.json            # TypeScript compiler options
 ```
 
 Key files explained:
@@ -49,18 +50,35 @@ Key files explained:
 
 ## Build & test
 
-This repository includes a top-level `Makefile`. Use these targets from the repository root.
+This plugin uses npm scripts for building and testing.
 
-Example commands:
+### Development commands
 
 ```sh
-make install # install exact dependencies
-make build # build the plugin
-make package # build and create distribution ZIP with SHA1
-make test # run unit tests
-make clean # clean build artifacts and node_modules
-make int-test # spin up local grafana with panel installed for testing
-make int-test-stop # stops local grafana with panel installed for testing
+# Install dependencies
+npm ci
+
+# Build the plugin
+npm run build
+
+# Run tests (watch mode)
+npm test
+
+# Run tests (CI mode)
+npm run test:ci
+
+# Type check
+npm run typecheck
+```
+
+### Local testing with Grafana
+
+```sh
+# Start Grafana with the plugin loaded
+npm run server
+
+# Access Grafana at http://localhost:3000
+# The demo dashboard is automatically provisioned
 ```
 
 ## Compatibility

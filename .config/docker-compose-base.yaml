@@ -13,9 +13,9 @@ services:
     ports:
       - 3000:3000/tcp
     volumes:
-      - ./dist:/var/lib/grafana/plugins/driprado-chatbot-panel
-      - ./provisioning:/etc/grafana/provisioning
-      - .:/root/driprado-chatbot-panel
+      - ../dist:/var/lib/grafana/plugins/driprado-chatbot-panel
+      - ../provisioning:/etc/grafana/provisioning
+      - ..:/root/driprado-chatbot-panel
 
     environment:
       NODE_ENV: development
