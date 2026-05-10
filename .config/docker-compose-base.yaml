@@ -1,7 +1,7 @@
 services:
   grafana:
     user: root
-    container_name: 'hypatiastack-chatbot-panel'
+    container_name: 'driprado-chatbot-panel'
 
     build:
       context: .
@@ -13,13 +13,13 @@ services:
     ports:
       - 3000:3000/tcp
     volumes:
-      - ../dist:/var/lib/grafana/plugins/hypatiastack-chatbot-panel
-      - ../provisioning:/etc/grafana/provisioning
-      - ..:/root/hypatiastack-chatbot-panel
+      - ./dist:/var/lib/grafana/plugins/driprado-chatbot-panel
+      - ./provisioning:/etc/grafana/provisioning
+      - .:/root/driprado-chatbot-panel
 
     environment:
       NODE_ENV: development
-      GF_LOG_FILTERS: plugin.hypatiastack-chatbot-panel:debug
+      GF_LOG_FILTERS: plugin.driprado-chatbot-panel:debug
       GF_LOG_LEVEL: debug
       GF_DATAPROXY_LOGGING: 1
-      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: hypatiastack-chatbot-panel
+      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: driprado-chatbot-panel

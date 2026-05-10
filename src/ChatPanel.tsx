@@ -33,7 +33,7 @@ export const ChatPanel: React.FC<PanelProps> = ({width, height}) => {
                 body: JSON.stringify({ prompt: input }),
             });
             const data = await res.json();
-            // const res = await getBackendSrv().post('/api/plugins/hypatiastack-chatbot-panel/resources/logql-agent', {
+            // const res = await getBackendSrv().post('/api/plugins/driprado-chatbot-panel/resources/logql-agent', {
             //     messages: input,
             //   });
 

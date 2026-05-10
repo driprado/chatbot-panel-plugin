@@ -32,7 +32,7 @@
 
 ### Submission Process
 
-- [] Submit for Review
+- ✅ Submit for Review
 
   - Sign in to [Grafana Cloud](https://grafana.com/auth/sign-in) (requires admin access)
   - Navigate to Org Settings → My Plugins → Submit New Plugin
@@ -43,7 +43,7 @@
     - Testing guidance for reviewers
     - Confirm provisioning is provided
 
-- [] Review Process
+- ⭕ Review Process
 
   - Automated validation runs
   - Manual code review and security check by Grafana team
