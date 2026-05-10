@@ -55,17 +55,11 @@ Example commands:
 
 ```sh
 make install # install exact dependencies
-
 make build # build the plugin
-
 make package # build and create distribution ZIP with SHA1
-
 make test # run unit tests
-
 make clean # clean build artifacts and node_modules
-
 make int-test # spin up local grafana with panel installed for testing
-
 make int-test-stop # stops local grafana with panel installed for testing
 ```
 

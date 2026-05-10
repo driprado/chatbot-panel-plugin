@@ -8,11 +8,11 @@ Grafana panel plugin that renders a chatbot-style UI for dashboards.
 
 yarn install
 
-2) Build in development (watch)
+1) Build in development (watch)
 
 yarn dev
 
-3) Build for production
+1) Build for production
 
 yarn build
 
@@ -28,5 +28,5 @@ yarn e2e
 
 ## Resources
 
-- Grafana plugin docs: https://grafana.com/docs/grafana/latest/developers/plugins/
-- Project repository: https://github.com/driprado/chatbot-panel-plugin
+- [Grafana plugin docs](https://grafana.com/docs/grafana/latest/developers/plugins/)
+- [Project repository](https://github.com/driprado/chatbot-panel-plugin)
