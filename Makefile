@@ -24,7 +24,7 @@ build:
 
 package: build
 	@echo "Packaging plugin for distribution..."
-	cd $(CHATBOT_DIR)/dist && zip -r ../../driprado-chatbot-panel-$$(grep '"version"' ../package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip .
+	cd $(CHATBOT_DIR) && mkdir -p ../driprado-chatbot-panel && cp -r dist/* ../driprado-chatbot-panel/ && cd .. && zip -r driprado-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip driprado-chatbot-panel && rm -rf driprado-chatbot-panel
 	@echo "Package created: driprado-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip"
 	@shasum -a 1 driprado-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip
 
