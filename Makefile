@@ -24,9 +24,9 @@ build:
 
 package: build
 	@echo "Packaging plugin for distribution..."
-	cd $(CHATBOT_DIR) && mkdir -p ../driprado-chatbot-panel && cp -r dist/* ../driprado-chatbot-panel/ && cd .. && zip -r driprado-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip driprado-chatbot-panel && rm -rf driprado-chatbot-panel
-	@echo "Package created: driprado-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip"
-	@shasum -a 1 driprado-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip
+	cd $(CHATBOT_DIR) && mkdir -p ../hypatiastack-chatbot-panel && cp -r dist/* ../hypatiastack-chatbot-panel/ && cd .. && zip -r hypatiastack-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip hypatiastack-chatbot-panel && rm -rf hypatiastack-chatbot-panel
+	@echo "Package created: hypatiastack-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip"
+	@shasum -a 1 hypatiastack-chatbot-panel-$$(grep '"version"' $(CHATBOT_DIR)/package.json | head -1 | sed 's/.*: "\(.*\)".*/\1/').zip
 
 test:
 	@echo "Running tests for $(CHATBOT_DIR)..."

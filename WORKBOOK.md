@@ -18,8 +18,9 @@
 
   - Run `make package` to build and create distribution ZIP with SHA1
   - Verify the ZIP contains all necessary files
-  - **Status**: Package created: `driprado-chatbot-panel-1.0.0.zip` (SHA1: `dd510c04dc2c4973c8b342ab7f0e16a386276a28`)
+  - **Status**: ✅ Package created: `hypatiastack-chatbot-panel-1.0.0.zip` (SHA1: `36c45d1e3865e9cee5cdd619ee642751cdf4dfd4`)
   - **Fixed**: Updated Makefile to create proper plugin directory structure
+  - **Updated**: Changed plugin ID to `hypatiastack-chatbot-panel` to match org slug
 
 - ✅ Prepare Test Environment
 
