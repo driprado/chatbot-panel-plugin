@@ -50,28 +50,6 @@
   - Plugin is tested on Grafana instances
   - Wait for approval notification
 
-### Post-Approval Signing
-
-- [ ] Create Access Policy Token
-
-  - Log in to Grafana Cloud account
-  - Go to My Account → Security → Access Policies
-  - Create access policy:
-    - Realm: `<YOUR_ORG_NAME>` (all-stacks)
-    - Scope: `plugins:write`
-  - Create token and save securely
-
-- [ ] Sign the Plugin
-
-  - Export token: `export GRAFANA_ACCESS_POLICY_TOKEN=<YOUR_TOKEN>`
-  - Run signing: `npm run sign` (or `npx @grafana/sign-plugin@latest`)
-  - Verify `MANIFEST.txt` is created in the `dist` directory
-
-- [ ] Distribute
-
-  - Plugin will be available in the Grafana plugin catalog
-  - Users can install via Grafana UI or CLI
-
 ## Enhancements
 
 - ✅ Create sponsorship link
@@ -95,6 +73,27 @@
     - Automatic GitHub release creation on version tags
   - **Note**: Signing will fail with 409 error until plugin is approved by Grafana
 
-## Bug
+## Backlog
 
-⭕ `Sign plugin` step in  .github/workflows/release.yml: build-and-release: job
+### Create v1.0.0 Release Manually
+
+⭕ Restore v1.0.0 release with original file for Grafana review
+
+1. Go to: https://github.com/driprado/chatbot-panel-plugin/releases/new
+2. Choose tag: `v1.0.0`
+3. Release title: `v1.0.0`
+4. Description:
+
+```txt
+## Release 1.0.0
+   
+**Installation:**
+Download the plugin archive and install it in your Grafana instance.
+   
+**Checksum (SHA1):** c05bf7ffb09f142c61c344c46acb8ea5367ec333
+```
+
+1. Upload file: Drag and drop `driprado-chatbot-panel-1.0.0.zip` from workspace
+1. Click "Publish release"
+
+⭕ `Sign plugin` step in .github/workflows/release.yml: build-and-release: job
