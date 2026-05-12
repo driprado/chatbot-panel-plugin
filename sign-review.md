@@ -24,7 +24,7 @@ Details: Consider to add a sponsorship link in your plugin.json file (Info.Links
 
 Cannot verify plugin build provenance attestation.
 
-Details: Please verify your workflow attestation settings. See the documentation on implementing build attestation: https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation
+Details: Please verify your workflow attestation settings. See the documentation on implementing build attestation: <https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation>
 
 Please fix the issues described above and update your submission.
 
@@ -118,7 +118,7 @@ Details: Consider to add a sponsorship link in your plugin.json file (Info.Links
 
 Cannot verify plugin build provenance attestation.
 
-Details: Please verify your workflow attestation settings. See the documentation on implementing build attestation: https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation
+Details: Please verify your workflow attestation settings. See the documentation on implementing build attestation: <https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation>
 
 Please fix the issues described above and update your submission.
 
@@ -146,7 +146,7 @@ Details: The package.json inside the provided source code can't be parsed or doe
 
 non-standard frontend build tooling
 
-Details: The plugin does not appear to use Grafana's standard frontend build tooling. Please use create-plugin to scaffold your plugin: https://grafana.com/developers/plugin-tools/
+Details: The plugin does not appear to use Grafana's standard frontend build tooling. Please use create-plugin to scaffold your plugin: <https://grafana.com/developers/plugin-tools/>
 
 ❌ js-map-no-match
 
@@ -255,6 +255,5 @@ Details: Consider to add a sponsorship link in your plugin.json file (Info.Links
 Please fix the issues described above and update your submission.
 
 To update your submission, please visit the grafana.com website, navigate to 'My Account', select 'My Plugins' and update your submission.
-
 
 Reply to this ticket (#227823) via email or in the User Portal.
