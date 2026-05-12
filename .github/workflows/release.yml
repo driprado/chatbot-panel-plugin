@@ -30,6 +30,7 @@ jobs:
         run: npm run build
 
       - name: Sign plugin
+        continue-on-error: true
         run: npm run sign
         env:
           GRAFANA_ACCESS_POLICY_TOKEN: ${{ secrets.CHATBOT_PANEL_TOKEN }}

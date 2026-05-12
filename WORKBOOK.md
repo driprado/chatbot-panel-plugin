@@ -74,16 +74,27 @@
 
 ## Enhancements
 
-- ⭕ Create sponsorship link
+- ✅ Create sponsorship link
   - finish process at <https://github.com/sponsors/driprado/signup>
 
-- ⭕ Add Sponsorship Link to plugin
+- ✅ Add Sponsorship Link to plugin
   - Add sponsorship link to `plugin.json` (Info.Links section)
   - Use name: `"sponsor"` or `"sponsorship"`
   - Example: `{"name": "Sponsor", "url": "https://github.com/sponsors/driprado"}`
   - Will be shown on plugin details page to allow users to support your work
+  - **Status**: Added to `plugin.json` pointing to `https://github.com/sponsors/driprado`
 
-- ⭕ Build Provenance Attestation
+- ✅ Build Provenance Attestation
   - Set up GitHub Actions workflow with build attestation
   - Verifies plugin build provenance automatically
   - [Documentation](https://grafana.com/developers/plugin-tools/publish-a-plugin/build-automation#enable-provenance-attestation)
+  - **Status**: Created `.github/workflows/release.yml` with:
+    - Build and package steps
+    - Provenance attestation generation using `actions/attest-build-provenance@v2`
+    - Optional signing step (continues on error for unpublished plugins)
+    - Automatic GitHub release creation on version tags
+  - **Note**: Signing will fail with 409 error until plugin is approved by Grafana
+
+## Bug
+
+⭕ `Sign plugin` step in  .github/workflows/release.yml: build-and-release: job
