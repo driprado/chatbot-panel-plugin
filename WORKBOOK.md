@@ -43,12 +43,13 @@
     - Testing guidance for reviewers
     - Confirm provisioning is provided
 
-- ⭕ Review Process
+- 🔄 Review Process — **awaiting response from Grafana team (ticket #227826)**
 
   - Automated validation runs
   - Manual code review and security check by Grafana team
   - Plugin is tested on Grafana instances
-  - Wait for approval notification
+  - Replied to Grafana team questions re: logql-agent architecture (2026-05-16)
+  - Agent development plan and solution architecture documented in [driprado/lgtm-agent](https://github.com/driprado/lgtm-agent)
 
 ## Enhancements
 
@@ -73,13 +74,11 @@
     - Automatic GitHub release creation on version tags
   - **Note**: Signing will fail with 409 error until plugin is approved by Grafana
 
-## Backlog
-
 ### Create v1.0.0 Release Manually
 
-⭕ Restore v1.0.0 release with original file for Grafana review
+- ✅ Restore v1.0.0 release with original file for Grafana review
 
-1. Go to: https://github.com/driprado/chatbot-panel-plugin/releases/new
+1. Go to: <https://github.com/driprado/chatbot-panel-plugin/releases/new>
 2. Choose tag: `v1.0.0`
 3. Release title: `v1.0.0`
 4. Description:
@@ -95,5 +94,3 @@ Download the plugin archive and install it in your Grafana instance.
 
 1. Upload file: Drag and drop `driprado-chatbot-panel-1.0.0.zip` from workspace
 1. Click "Publish release"
-
-⭕ `Sign plugin` step in .github/workflows/release.yml: build-and-release: job

@@ -1,5 +1,24 @@
 # Signing Review
 
+## Grafana Team
+
+Hi Adrea
+
+Thank you for your submission. Before we can move forward with the review, we have a few questions about how the plugin is intended to work.
+
+Looking at the code, the panel sends chat messages to a backend service at <http://localhost:8000/query> (ChatPanel.tsx line 30). Could you help us understand:
+
+What is the backend service? The plugin.json references a logql-agent — what is this, and is it something users are expected to run themselves, or is it a hosted service?
+How are users expected to deploy this? For example, do they run the logql-agent alongside Grafana, or connect to a hosted endpoint?
+Is there documentation or a README for the logql-agent that you could point us to?
+
+The reason we ask is that the panel currently only works when the logql-agent is running on the same machine as the user's browser (localhost:8000), which won't work in most Grafana deployments. Understanding your intended use case will help us give you the right guidance on how to guide the plugin's development.
+
+Many thanks,
+
+The Grafana team
+Reply to this ticket (#227826) via email or in the User Portal.
+
 ## Plugin Validation Report 4
 
 Plugin: driprado-chatbot-panel
